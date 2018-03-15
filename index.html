@@ -1,288 +1,134 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" type="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <title>Exercise Python</title>
-
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-    
-    <link rel="shortcut icon" type="image/png" href="https://www.python.org/static/opengraph-icon-200x200.png">
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<style type="text/css">
-
-
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h1 {
-    font-size: 70px;
-    text-align: center;
-    padding-top: 50px;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-h2 {
-    font-size: 25px;
-    text-align: center;
-    padding-top: 25px;
-
-}
-
-.beginner {
-    font-size: 75px;
-    color: #0fbdd0;
-}
-
-.intermediate {
-    font-size: 75px;
-    color: #0fbdd0;
-    width: auto;
-
-}
-
-
-.pro {
-    font-size: 75px;
-    color: #0fbdd0;
-    
-}
-
-.description {
-    font-size: 22px;
-}
-
-.about {
-    font-size: 75px;
-    color: #0fbdd0;
-}
-
-.subheading {
-    font-size: 35px;
-    color: #0fbdd0;
-    
-
-}
-
-.task {
-    font-size: 20px;
-    color: black;
-}
-
-.ending {
-    font-size: 15px;
-    text-align: center;
-    color: gray;
-}
-
-.intro {
-    font-size: 20px;
-    text-align: center;
-    color: black    ;
-    padding-top: 20px;
-
-}
-
-a intro{
-    font-size: 20px;
-    text-align: center;
-    color: black    ;
-    padding-top: 20px;
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0fbdd0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-li {
-
-    float: right;
-    color: white;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-}
-
-li a:hover {
-    color: #e7e7e7;
-}
-
-</style>
-
-
-<div class="container">
- 
-<!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container">
- 
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
- 
-      <!-- Button that toggles the navbar on and off on small screens -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
- 
-      <!-- Hides information from screen readers -->
-        <span class="sr-only"></span>
- 
-        <!-- Draws 3 bars in navbar button when in small mode -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
- 
-      <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-      <a class="pull-left" href="#">EXERCISEPYTHON</a>
+      <a class="navbar-brand" href="#">ExercisePython</a>
     </div>
- 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="pull-left"><a href="#">EXERCISEPYTHON</a></li>
-        <li class="pull-right"><a href="#about">About</a></li>
-        <li class="pull-right"><a href="#pro">Pro</a></li>
-        <li class="pull-right"><a href="#intermediate">Intermediate</a></li>
-        <li class="pull-right"><a href="#beginner">Beginner</a></li>
-        
-        
-        
-        
-
+        <li><a href="#home">Home</a></li>
+        <li><a href="#beginner">Beginner</a></li>
+        <li><a href="#intermediate">Intermediate</a></li>
+        <li><a href="#pro">Pro</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-</div>
-<br>
+  
+<div class="container text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8"> 
+      <h1 id="home" style="font-size: 90px; margin-top: 50px;">Our Questions<br>Your answers</h1>
 
+      <h2 style="font-size: 30px;">We help you to improve your Python skills!</h2>
+      <p style="font-size: 15px;"><br>Welcome to exercisepython.github.io. Each exercise is sorted by its level and has a solution link. Solving this questions will not only train your brain, but also improve your Python skills. Feel free to check out our Twitter page, or contact us per E-mail. Happy coding!</p>
 
+      <h3 id="beginner" style="font-size: 50px; margin-top: 150px;">Beginner</h3>
+      <p style="font-size: 20px; margin-top: 25px; margin-bottom: 25px;">Easy beginner exercises, for those who just started to learn Python.</p>
 
-<div class="container">
-<div class="page-header">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h4>Hello World!</h4>
+        <p>Code a program, that prints out "Hello World"</p> 
+        <p>Code a program, where the user inputs his name and prints out "Hello" and the users name.</p>
 
-	<h2></h2>
-	<h1>Our questions<br>
-	Your answers</h2>
-		<h2>Over 25 questions in 3 differnet sections will definetly improve your Python skills.</h2>
-	<p class="intro">Welcome to exercisepython.github.io. Each exercise is sorted by its level and has a solution link. Solving this questions will not only train your brain, but also improve your Python skills. Feel free to check out our <a class="intro" href="https://twitter.com/exercisepython" target ="_blank">Twitter</a> page, or contact us per E-mail. Happy coding!</p>
+      <h4>a+5=b</h4>
+        <p>Code a program, where the user inputs a number. Then this number is added with 5 and printed out</p> 
+        <p>Code a program, where the user inputs 3 numbers. The program adds this numbers and prints them out.<br> (a + b + c = d)</p> 
 
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	<div id="beginner"><h3 class="beginner"><br>Beginner</h3>
-		<p class= "description">Easy beginner exercises, for those who just started to learn Python.</p>
+      <h4>Kid or adult?</h4>
+        <p>Code a program, where the user inputs his age. When he's older than 18 it should say: "You're an adult".
+        When not: "You're a kid."</p> 
+        <p>Code a program, where the user inputs a number, but only prints it out, when it 10 or smaller. Otherwise it should say: number too big</p> 
 
-			<h4 class="subheading">Hello World!</h4>
-				<p class="task">Code a program, that prints out "Hello World"</p> 
-				<p class="task">Code a program, where the user inputs his name and prints out "Hello" and the users name.</p>
+      <h4>Login</h4>
+        <p>Code a program, where the user inputs a username and a password (the password is "Python"). When the password is right the the program should welcome the username. When not the program should quit</p> 
 
-			<h4 class="subheading">a+5=b</h4>
-				<p class="task">Code a program, where the user inputs a number. Then this number is added with 5 and printed out</p> 
-				<p class="task">Code a program, where the user inputs 3 numbers. The program adds this numbers and prints them out.<br> (a + b + c = d)</p> 
+      <h4>1,2,3,4,5...</h4>
+        <p>Code a program, that prints out all number's from 1 to 10 individually."</p> 
+        <p>Let several users input their name and age. Then print out the result like this: [name: age] Each name should apperear on a new line.</p>
 
-			<h4 class="subheading">Kid or adult?</h4>
-				<p class="task">Code a program, where the user inputs his age. When he's older than 18 it should say: "You're an adult".
-				When not: "You're a kid."</p> 
-				<p class="task">Code a program, where the user inputs a number, but only prints it out, when it 10 or smaller. Otherwise it should say: number too big</p> 
+      <h3 id="intermediate" style="font-size: 50px; margin-top: 150px;">Intermediate</h3>
 
-			<h4 class="subheading">Login</h4>
-				<p class="task">Code a program, where the user inputs a username and a password (the password is "Python"). When the password is right the the program should welcome the username. When not the program should quit</p> 
+      <p style="font-size: 20px; margin-top: 25px; margin-bottom: 25px;">Demanding tasks, that create little, useful programs.</p>
 
-			<h4 class="subheading">1,2,3,4,5...</h4>
-				<p class="task">Code a program, that prints out all number's from 1 to 10	individually."</p> 
-				<p class="task">Let several users input their name and age. Then print out the result like this: [name: age] Each name should apperear on a new line.</p> 
-				
-	</div>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
-	<div id="intermediate"><h3 class="intermediate"><br>Inter-<br>mediate</h3>
-		<p class= "description">Demanding tasks, that create little, useful programs.</p>
+      <h4>Calculator</h4>
+        <p>Code a program, where the user inputs what kind of calculation he wants to make (+,-,*,/). Then he inputs 2 numbers and the result has to be calculated. Make sure, that he can't divide by 0.</p> 
+        <p>Code a program, that looks how many times a number is twice in a list Then the second number has to be sorted out. Here's the list:<br>[1,3,5.5,56,34,232,56,78,3,29,34,5.5]</p>
+      <h4>Numbers</h4>
+        <p>Code a program, that sorts all numbers in a list and then substracts all numbers from the biggest to the smallest one. Here's the list:<br>
+        [45,23,6,2,77,2,3,52,244,235,55,22]</p> 
+        <p>Ask the user to enter a range of numbers (e.g 1 to 10). Then a random number in this range should be created and printed out.</p>
+      <h4>Odd or Even?</h4>
+        <p>Code a program where the user inputs a number. The program checks whether the number is odd or even. (Google modulo for help)</p> 
+        <p>Code a program, that checks how many numbers are in a list, that you can divide by 5. Here's the list:<br>
+        [3,5,23,55,43,30,22,125,23,34]</p>
+      <h4>Birthday Calendar</h4>
+        <p>Code a program, where the user inputs the name and the birthdate of a person. After this a list with names and birthdates should appear (that were added previously). Then the user sgould be able to add more names and birthdates.</p>
+      <h4>Login 2</h4>
+        <p>Code a program, where the user inputs his username and a password (the password is "Python"). When the password is right the the program should welcome the username. In the program, the user should be able to change the password. When the password is wrong the user should have 3 tries to enter the right password. When all tries are wrong the program should quit.</p>
 
-			<h4 class="subheading">Calculator</h4>
-				<p class="task">Code a program, where the user inputs what kind of calculation he wants to make (+,-,*,/). Then he inputs 2 numbers and the result has to be calculated. Make sure, that he can't divide by 0.</p> 
-				<p class="task">Code a program, that looks how many times a number is twice in a list Then the second number has to be sorted out. Here's the list:<br>[1,3,5.5,56,34,232,56,78,3,29,34,5.5]</p>
-			<h4 class="subheading">Numbers</h4>
-				<p class="task">Code a program, that sorts all numbers in a list and then substracts all numbers from the biggest to the smallest one. Here's the list:<br>
-				[45,23,6,2,77,2,3,52,244,235,55,22]</p> 
-				<p class="task">Ask the user to enter a range of numbers (e.g 1 to 10). Then a random number in this range should be created and printed out.</p>
-			<h4 class="subheading">Odd or Even?</h4>
-				<p class="task">Code a program where the user inputs a number. The program checks whether the number is odd or even. (Google modulo for help)</p> 
-				<p class="task">Code a program, that checks how many numbers are in a list, that you can divide by 5. Here's the list:<br>
-				[3,5,23,55,43,30,22,125,23,34]</p>
-			<h4 class="subheading">Birthday Calendar</h4>
-				<p class="task">Code a program, where the user inputs the name and the birthdate of a person. After this a list with names and birthdates should appear (that were added previously). Then the user sgould be able to add more names and birthdates.</p>
-			<h4 class="subheading">Login 2</h4>
-				<p class="task">Code a program, where the user inputs his username and a password (the password is "Python"). When the password is right the the program should welcome the username. In the program, the user should be able to change the password. When the password is wrong the user should have 3 tries to enter the right password. When all tries are wrong the program should quit.</p>
-		</div>
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
-	<div id="pro"><h3 class="pro"><br>Pro</h3>
-		<p class="description">Challenging exercises, that create useful (or not so useful) applications with PYthon.</p>
-			<h4 class="subheading">Guess the number</h4>
-				<p class="task">Code a program that generates a random number between 1 and 100 (including 1 and 100). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right</p> 
-				<p class="task">Code a "guess the word" game with hints.</p>
-			<h4 class="subheading">Quizgame</h4>
-				<p class="task">Code a quizgame with at least 10 questions. If the answer is right the user can solve the next question. If not the user has 3 attempts to solve it. If the user can't solve the question "Game Over" has to appear on the screen. The iser should be able to add more questions.</p>
-			<h4 class="subheading">Password generator</h4>
-				<p class="task">Code a program, that generates a random password (like A4hR3). The user should be asked how many digits the password has and how strong it is. Furthermore the user should be able to see previously created passwords.</p>
-			<h4 class="subheading">Fibonacci</h4>
-				<p class="task">Code a program, that asks the user how many Fibonnaci numbers to generate and then generates them (Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13 ...). Make sure to ask the user to enter the number of numbers in the sequence to generate.
-			<h4 class="subheading">Sorting machine</h4>
-				<p class="task">Code a program that creates a random list (with 10 numbers) and sorts it from low to high. You aren't allowed to use the sort() function.</p>
-			<h4 class="subheading">Reversing sentences</h4>
-				<p class="task">Code a program that lets the user input a sentence. Then all the words have to be reversed. Example:<br><br>
-				I like Python!<br>
-				!Python like I</p>
-			<h4 class="subheading">Rock paper scissors</h4>
-				<p class="task">Code a two player rock paper scissors game.</p> 
+      <h3 id="pro" style="font-size: 50px; margin-top: 150px;">Pro</h3>
 
+      <p style="font-size: 20px; margin-top: 25px; margin-bottom: 25px;">Challenging exercises, that create useful (or not so useful) applications with Python.</p>
+      <h4>Guess the number</h4>
+        <p>Code a program that generates a random number between 1 and 100 (including 1 and 100). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right</p> 
+        <p>Code a "guess the word" game with hints.</p>
+      <h4>Quizgame</h4>
+        <p">Code a quizgame with at least 10 questions. If the answer is right the user can solve the next question. If not the user has 3 attempts to solve it. If the user can't solve the question "Game Over" has to appear on the screen. The iser should be able to add more questions.</p>
+      <h4>Password generator</h4>
+        <p>Code a program, that generates a random password (like A4hR3). The user should be asked how many digits the password has and how strong it is. Furthermore the user should be able to see previously created passwords.</p>
+      <h4>Fibonacci</h4>
+        <p>Code a program, that asks the user how many Fibonnaci numbers to generate and then generates them (Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13 ...). Make sure to ask the user to enter the number of numbers in the sequence to generate.
+      <h4>Sorting machine</h4>
+        <p>Code a program that creates a random list (with 10 numbers) and sorts it from low to high. You aren't allowed to use the sort() function.</p>
+      <h4>Reversing sentences</h4>
+        <p>Code a program that lets the user input a sentence. Then all the words have to be reversed. Example:<br><br>
+        I like Python!<br>
+        !Python like I</p>
+      <h4>Rock paper scissors</h4>
+        <p>Code a two player rock paper scissors game.</p>
 
-</p>
-	</div>
+      <h3 id="about" style="font-size: 50px; margin-top: 150px;">About</h3>
 
-</div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
-	<div id="about"><h3 class="about"><br>About</h3>
-		<p class= "description">Contact details, advertising disclosure and submit link.</p>
-		<h4 class="subheading">Why?</h4>
-			<p class="task">exercisepython.com was created by vfstudios for Python students. When learning a coding language it's very important to apply new skills with exercises. That's why we build this website.<br> New exercises are added monthly, but you can feel free to contact us and submit new exercises. Moreover you can submit solutions for previous exercises. These are added to the solutions page.</p>
-		<h4 class="subheading">Contact</h4>
-			<p class="task">exercisepython@gmail.com</p>
-		<h4 class="subheading">Advertising disclosure</h4>
-			<p class="task">exercisepython.github.io uses Google Adsense to serve relevant ads to it’s users on various pages throughout the site. Third party vendors (including Google and its partners) use cookies to serve ads based on a user’s prior visits to this website or other websites. If you would like to opt out of personalized advertising, you can do so by visiting the ad settings page from Google.</p>
-	
-	</div>
-</div>
-	<h5 class="ending">2018 vfstudios</h5>
-
-</div>
-</div>
+      <p style="font-size: 20px; margin-top: 25px; margin-bottom: 25px;">Contact details, advertising disclosure and submit link.</p>
+    <h4>Why?</h4>
+      <p>exercisepython.com was created by vf Inc. for Python students. When learning a coding language it's very important to apply new skills with exercises. That's why we build this website.<br> New exercises are added monthly, but you can feel free to contact us and submit new exercises. Moreover you can submit solutions for previous exercises. These are added to the solutions page.</p>
+    <h4>Contact</h4>
+      <p>exercisepython@gmail.com</p>
+    <h4>Advertising disclosure</h4>
+      <p>exercisepython.github.io uses Google Adsense to serve relevant ads to it’s users on various pages throughout the site. Third party vendors (including Google and its partners) use cookies to serve ads based on a user’s prior visits to this website or other websites. If you would like to opt out of personalized advertising, you can do so by visiting the ad settings page from Google.</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
 </div>
 
+<footer class="container text-center">
+  <p>vf 2018</p>
+</footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
